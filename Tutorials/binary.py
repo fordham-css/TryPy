@@ -42,7 +42,7 @@ while flag:
         # BASE CASE
         else:
             binary.insert(0, bit) # Places bit in first position of binary string [0 -> (1)0, 1010 -> (0)1010, ...]
-            print('String now looks like: {0}\n'.format(binary)) # No, it reall is that easy to print a list
+            print('String now looks like: {0}\n'.format(binary)) # Yes, it really is that easy to print a list
 
     # ERROR CASE[1]: String entered
     except ValueError:
