@@ -31,7 +31,7 @@ while flag:
         break # Avoid inserting 'break' into binary[]
 
     ## ERROR HANDLING
-    # More can be read here: https://docs.python.org/3/tutorial/errors.html
+    # More can be read here: https://docs.python.org/2.7/tutorial/errors.html
     try:
         bit = int(bit) # Convert string bit to int
 
