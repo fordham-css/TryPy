@@ -10,23 +10,19 @@ At the tail of each tutorial, there are a number of extensions that could be imp
 ## Contents
 
 ### hello.cpp
-Relish in wonder at the temple of Object Oriented Programming syntax from last decade and recall how finicky a muse it was
+*Relish in wonder at the temple of Object Oriented Programming syntax from last decade and recall how finicky a muse it was*
 
 ### hello.py
-Marvel in the simplicity and elegance of the language spoken by Python
+*Marvel in the simplicity and elegance of the language spoken by Python*
 
 ### jeeves.py 
-Get an overview of how Python is run, how variables are defined & used, and how to set up conditional statements in your code
-
-    **A robot butler to suggest an outfit based on the weather you provide it**
+Get an overview of how Python is run, how variables are defined & used, and how to set up conditional statements in your code by building a robot butler to suggest an outfit based on the weather information you provide it.
 
 - Variables
 - Conditionals
 
 ### binary.py
-Learn the Python equilivant of the array: a list. Use loops to iterate over the list and perform computations using stored values
-
-    **Convert a binary string stored in a list into a decimal value**
+Learn the Python equilivant of the array: a list. Use loops to iterate over the list and perform computations using stored values by constructing a program to convert a Binary string to a decimal value
 
 - Loops
 - Lists
