@@ -1,5 +1,5 @@
-# TryPy
-Python demo workshop March 22, 2017
+# Tutorials
+Python Demo Workshop March 22, 2017
 
 ## Outline
 Set of Python files meant to demonstrate basic programming syntax and nifty Python provided data structures and methods
