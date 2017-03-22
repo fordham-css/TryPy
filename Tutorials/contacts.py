@@ -93,7 +93,19 @@ def store_contact(db):
 # READ
 # Prints all currently stored in DB
 def print_DB(db):
-    pass
+    print('Printing database...')
+
+    # Loop through dictionary to print values
+    for value in db.values():
+        print('Name: {}'.format(value.name))
+        print('Phone: {}'.format(value.phone))
+        print('Address: {}'.format(value.address))
+        print('Email: {}'.format(value.email))
+
+        if value.nickname:
+            print('Nickname: {}'.format(value.nickname))
+
+        print '-' * 75
 
 
 # edit_contact
