@@ -27,12 +27,14 @@ Learn the Python equilivant of the array: a list. Use loops to iterate over the 
 - Loops
 - Lists
 
-### conatcts.py
+### [conatcts.py](https://github.com/fordham-css/TryPy/blob/master/Tutorials/contacts.py)
+Synthesize your understanding of programming syntax in Python by writing a program that allows a user to interact with a database to store, read, and update contacts
 
 - Functions
 - Dictionaries
 - Objects
 - Modules
+- CRUD principles
 
 ### scrapy.py
 
