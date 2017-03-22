@@ -82,3 +82,18 @@ else: # Executes on good_weather == False
 		print('Try the layered look. Lightweight sweater under a rain jacket')
 
 print('Hope you have a great day {0}!!!'.format(name))
+
+'''
+-- BONUS --
+Obviously, having to enter your name every single time you run this
+program is woefully ineffecient.
+
+-> Try having the program save your name the first time you enter it
+(say into a text file) and in subsequent uses just read the name
+from the file
+
+Working with files in Python: http://pymbook.readthedocs.io/en/latest/file.html
+
+HINT: You can use a conditional to see if the name has been
+recorded already. If so, read the name from the file. Else...
+'''
