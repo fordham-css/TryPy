@@ -84,3 +84,21 @@ print('The binary string: {0}\
        \nThe decimal value: {1} '
        .format(binaryString, decimal)
        )
+
+'''
+-- BONUS --
+1) While effective, the built in list method insert() we use can be ineffecient
+as the size of the list increases [O(N) complexity]. Implement a module-level
+Data Structure to hold the binary string before computation [Collections Module Deque]
+    - https://docs.python.org/3/library/collections.html#collections.deque
+
+HINT: Will need to import the collections module in your program. How can you generate an instance of
+a Deque Class?
+~~~~~~~~~~~~~~~~~
+2) The for loop we currently use to calculate the decimal value works, but can be made more
+clean through the use of a For Each Loop. But we also need to keep a tab on the index, which a basic 
+<for thing in List> does not grant. How can you keep track of index in a For Each Loop?
+
+HINT: If you want to grab more than one value from the list (say a bit and its index), you're gonna
+need to supply two values to the for loop
+'''
