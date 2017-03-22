@@ -8,11 +8,11 @@ Set of Python files meant to demonstrate basic programming syntax and nifty Pyth
 
 1) hello.cpp
 
-Relish in wonder at the temple of Object Oriented Programming syntax from last decade and recall how finicky a muse it was.
+Relish in wonder at the temple of Object Oriented Programming syntax from last decade and recall how finicky a muse it was
 
 2) hello.py
 
-Marvel in the simplicity and elegance of the language spoken by Python.
+Marvel in the simplicity and elegance of the language spoken by Python
 
 3) jeeves.py 
 
