@@ -10,7 +10,6 @@ Python Demo Workshop, March 22nd 2017
 '''
 ### Import Modules
 import shelve # Database Management Module [https://docs.python.org/2/library/shelve.html]
-import os
 
 # Database Name
 DB_NAME = '.Contacts.db'
