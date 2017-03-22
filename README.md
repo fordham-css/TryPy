@@ -1,5 +1,5 @@
 # TryPy
-Learn Python the best way - by doing
+Learn Python the best way - *by doing*
 
 ## Overview
 TryPy is meant to be both a resource for learning Python and an opprotunity to contribute to a culture of programming knowledge. 
