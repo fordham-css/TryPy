@@ -27,13 +27,15 @@ Learn the Python equilivant of the array: a list. Use loops to iterate over the 
 - Loops
 - Lists
 
-##) conatcts.py
+### conatcts.py
+
 - Functions
 - Dictionaries
 - Objects
 - Modules
 
 ### scrapy.py
+
 - 3rd Party Modules
 - Requirements Files
 - Reusable Code
