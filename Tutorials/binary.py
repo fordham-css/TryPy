@@ -65,7 +65,7 @@ for i in range(len(binary)):
 
     # Else, compute value and add to result
     else:
-        exp = len(binary) - i - 1 # Power to raise 2 to [a=[1,1]; i=0; exp => len-i-1 = 1]
+        exp = len(binary) - i - 1 # Power to raise 2 to [a=[1,1]; i=0; exp => len-i-1 = 0]
         res = pow(2, exp) # 2 to the power of exp [pow(2,3) -> 2^3]
         decimal += res
 
