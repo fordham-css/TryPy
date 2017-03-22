@@ -26,6 +26,7 @@ class Contact():
         self.email = email
         self.nickname = nickname
 
+
 # open_DB
 # Returns open instance of shelve object
 def open_DB():
@@ -76,7 +77,6 @@ def store_contact(db):
     email = raw_input('Please enter the email: ')
     nick = raw_input('Please enter the nickname (or leave blank for none): ')
 
-
     # Account for no nickname
     if nick == '':
         nick = None
@@ -88,6 +88,7 @@ def store_contact(db):
     db[phone] = contact # Store contact as value with key being phone number
 
     return True
+
 
 # print_DB
 # READ
@@ -253,6 +254,33 @@ def main():
     if isClosed:
         print('Closed {} OK'.format(DB_NAME))
 
+
 # Entry Point of Script
 if __name__ == '__main__':
     main()
+
+
+'''
+-- BONUS --
+1) Add a function to allow a user to enter in a value for a Contact attribute
+(email, name, address, etc.) and query Database to find if there is a Contact with
+those values.
+
+HINT: Since the size of this program isn't astronomically large, you can get away with
+looping over the dictionary. How to go through the objects in the database to select the
+one(s) with matching attributes?
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+2) Implement dunder methods for Contact class. For example, the __str__ method is implicitly 
+called when you try <print contact>. Dundner methods are special to Python and have very
+specific, pre defined uses: http://minhhh.github.io/posts/a-guide-to-pythons-magic-methods
+
+HINT: The __init__ method is a dunder method. What are its arguments? What is the purpose of 
+passing 'self' as the first argument to the class method?
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+3) Entering in contacts manually can be a chore. Offer a way for a user to pass a CSV or text 
+file as an argument to the program and read in contacts from the file
+
+HINT: There are many ways to attack this problem. Decide what the most effective method will
+be versus how difficult it would be to implement. At any rate, you ideally will have a file of
+many contacts that you separate into unique Contact instances and save to the database
+'''
