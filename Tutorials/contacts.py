@@ -20,7 +20,7 @@ DB_NAME = '.Contacts.db'
 class Contact():
 
     # Constructor Method
-    def __init__(self, name, phone, address, email, nickname=None):
+    def __init__(self, name, phone, address, email, nickname):
         self.name = name
         self.phone = phone
         self.address = address
@@ -68,8 +68,26 @@ def close_DB(db):
 # CREATE
 # Creates and saves new Contact object to DB
 def store_contact(db):
-    pass
+    print('You are going to add a contact to your book')
 
+    # Get new contact information
+    name = raw_input('Please enter the persons name: ')
+    phone = raw_input('Please enter the telephone number: ')
+    address = raw_input('Please enter the address: ')
+    email = raw_input('Please enter the email: ')
+    nick = raw_input('Please enter the nickname (or leave blank for none): ')
+
+    # Account for no nickname
+    if nick == '':
+        nick = None
+
+    # Create new Contact Instance
+    contact = Contact(name, phone, address, email, nick)
+
+    # Save to DB
+    db[phone] = contact # Store contact as value with key being phone number
+
+    return True
 
 # print_DB
 # READ
@@ -95,7 +113,11 @@ def delete_contact(db):
 # main
 # Driver of program; Calls other functions that do stuff
 def main():
-    pass
+    db = open_DB()
+
+    # Driver to go here
+
+    close_DB(db)
 
 # Entry Point of Script
 if __name__ == '__main__':
