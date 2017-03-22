@@ -1,2 +1,13 @@
 # C++ Compiled Files
 *.out
+
+# Python Compiled Files
+*.py[cod]
+
+# Program Storage
+*.db
+*.txt
+*.csv
+
+# Key Files
+keys.py
