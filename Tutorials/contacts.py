@@ -97,6 +97,7 @@ def print_DB(db):
 
     # Loop through dictionary to print values
     for value in db.values():
+        print '-' * 75
         print('Name: {}'.format(value.name))
         print('Phone: {}'.format(value.phone))
         print('Address: {}'.format(value.address))
@@ -240,7 +241,7 @@ def main():
                 flag = False
 
             if flag:
-                print('[Operation successful...]')
+                print('--->[Operation successful]<---')
 
         # ERROR CASE[4]: User enters string in Main Menu
         except ValueError:
