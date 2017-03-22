@@ -63,6 +63,35 @@ def close_DB(db):
 
         exit(2) # !! IF WE GOT HERE WE MESSED UP !! *#
 
+
+# store_contact
+# CREATE
+# Creates and saves new Contact object to DB
+def store_contact(db):
+    pass
+
+
+# print_DB
+# READ
+# Prints all currently stored in DB
+def print_DB(db):
+    pass
+
+
+# edit_contact
+# UPDATE
+# Edits a contact accessed through key [phone number]
+def edit_contact(db):
+    pass
+
+
+#delet_contact
+# DELETE
+# Deletes a particular contact from the DB
+def delete_contact(db):
+    pass
+
+
 # main
 # Driver of program; Calls other functions that do stuff
 def main():
