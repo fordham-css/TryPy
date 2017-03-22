@@ -58,7 +58,7 @@ else:
 # Boolean Data Type
 good_weather = True
 
-if condition == 'cloudy' or condition == 'overcast':
+if condition != 'clear':
 	good_weather = False
 
 if good_weather: # Will execute if good_weather == True
