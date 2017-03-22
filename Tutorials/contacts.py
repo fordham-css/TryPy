@@ -77,6 +77,7 @@ def store_contact(db):
     email = raw_input('Please enter the email: ')
     nick = raw_input('Please enter the nickname (or leave blank for none): ')
 
+
     # Account for no nickname
     if nick == '':
         nick = None
@@ -144,7 +145,7 @@ def edit_contact(db):
 
     # ERROR CASE[3]: Contact with matching key not found in DB
     except KeyError:
-        print('No contact found with phone number: {}'.format(idx))
+        print('No contact found with phone number to edit: {}'.format(idx))
         print('Exiting update function...')
 
         return False
@@ -154,7 +155,35 @@ def edit_contact(db):
 # DELETE
 # Deletes a particular contact from the DB
 def delete_contact(db):
-    pass
+    print('Going to delete a record in the database...')
+
+    # Print out key/value pairs
+    for key, value in db.iteritems():
+        print('Contact name: {}'.format(value.name))
+        print('Contact phone number: {}'.format(key))
+        print '-' * 75
+
+    idx = raw_input('Please enter the phone number of the contact to delete: ')
+
+    try:
+        contact = db[idx]
+
+        # Confirm user wants to delete contact
+        confirm = raw_input('Are you SURE you want to delete {} from your contacts? (y/n):'.format(contact.name))
+
+        if confirm.lower() == 'y':
+            del db[idx] # Deletes key/value pair in DB on key
+            print('Deleted {} OK'.format(contact.name))
+            return True
+
+        else:
+            print('{} will stay in DB...'.format(contact.name))
+
+    except KeyError:
+        print('No contact found with phone number to delete: {}'.format(idx))
+        print('Exiting delete function...')
+
+        return False
 
 
 # main
