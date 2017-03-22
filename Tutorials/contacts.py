@@ -119,6 +119,7 @@ def edit_contact(db):
     # iteritems() will return a list of tuples that contain the key in the first position
     # and value in the second
     for key, value in db.iteritems():
+        print '-' * 75
         print('Contact name: {}'.format(value.name))
         print('Contact phone number: {}'.format(key))
         print '-' * 75
@@ -159,6 +160,7 @@ def delete_contact(db):
 
     # Print out key/value pairs
     for key, value in db.iteritems():
+        print '-' * 75
         print('Contact name: {}'.format(value.name))
         print('Contact phone number: {}'.format(key))
         print '-' * 75
@@ -193,6 +195,58 @@ def main():
     db = open_DB()
 
     # Main Loop to control flow of program
+    while True:
+        print '*' * 75
+        print('Main Menu')
+        print '*' * 75
+        print('Please select a command: ')
+        print('1. Add a contact')
+        print('2. Print the database')
+        print('3. Edit a contact information')
+        print('4. Delete a contact')
+        print('5. Exit program')
+
+        # Get user choice to run desired function
+        choice = raw_input('> ')
+
+        try:
+            choice = int(choice)
+            flag = True
+
+            ### No switch/case in Python, so gonna have to do this the long way...
+            # EXIT CASE
+            if choice == 5:
+                print('Thanks for stopping by!')
+                break
+
+            # Store a new contact
+            elif choice == 1:
+                flag = store_contact(db)
+
+            # Print DB
+            elif choice == 2:
+                print_DB(db)
+
+            # Edit Contact
+            elif choice == 3:
+                flag = edit_contact(db)
+
+            # Delete Contact
+            elif choice == 4:
+                flag = delete_contact(db)
+
+            # ERROR[5]: User enters in option not covered in menu
+            else:
+                print('ERROR[5]: Please enter a valid command (1-5)')
+                flag = False
+
+            if flag:
+                print('[Operation successful...]')
+
+        # ERROR CASE[4]: User enters string in Main Menu
+        except ValueError:
+            print('ERROR[4]: Menu choice must be an int, not a string')
+
 
     isClosed = close_DB(db)
 
