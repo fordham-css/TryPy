@@ -127,7 +127,7 @@ def edit_contact(db):
     idx = raw_input('Please enter the phone number of the contact to edit: ')
 
     try:
-        contact = db.get(idx)
+        contact = db[idx]
         print('Going to update {}...'.format(contact.name))
 
         # Phone number is not reassigned due to its use as primary key
