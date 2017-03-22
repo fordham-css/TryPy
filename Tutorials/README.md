@@ -16,10 +16,18 @@ Marvel in the simplicity and elegance of the language spoken by Python
 
 3) jeeves.py 
 
+Get an overview of how Python is run, how variables are defined & used, and how to set up conditional statements in your code
+
+*A robot butler to suggest an outfit based on the weather you provide it*
+
 - Variables
 - Conditionals
 
 4) binary.py
+
+Learn the Python equilivant of the array: a list. Use loops to iterate over the list and perform computations using stored values
+
+  *Convert a binary string stored in a list into a decimal value*
 
 - Loops
 - Lists
@@ -28,3 +36,5 @@ Marvel in the simplicity and elegance of the language spoken by Python
 
 - Functions
 - Dictionaries
+- Objects
+- Modules
