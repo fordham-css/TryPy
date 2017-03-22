@@ -179,6 +179,7 @@ def delete_contact(db):
         else:
             print('{} will stay in DB...'.format(contact.name))
 
+    # ERROR CASE[4]: Contact with matching key not found in DB
     except KeyError:
         print('No contact found with phone number to delete: {}'.format(idx))
         print('Exiting delete function...')
@@ -191,7 +192,7 @@ def delete_contact(db):
 def main():
     db = open_DB()
 
-    # Driver to go here
+    # Main Loop to control flow of program
 
     isClosed = close_DB(db)
 
