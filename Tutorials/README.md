@@ -1,30 +1,39 @@
-# TryPy
-Python demo workshop March 22, 2017
+# Tutorials
+Python Demo Workshop March 22, 2017
 
 ## Outline
-Set of Python files meant to demonstrate basic programming syntax and nifty Python provided data structures and methods
+Set of Python files meant to demonstrate basic programming syntax and nifty Python provided data structures and methods. Note that the order these are presented in are aimed to explain Python from the bottom up, so your order may vary. Consult the list of topics and determine what you can handle and what you should practice
+
+## Extension Bonuses
+At the tail of each tutorial, there are a number of extensions that could be implemented in the program. These range from optimizations in program code to additional features that go beyond the tutorial scope. References to documentation on possible solutions is provided, although users are strongly encouraged to come up with their own designs
 
 ## Contents
 
-1) hello.cpp
+### hello.cpp
+*Relish in wonder at the temple of Object Oriented Programming syntax from last decade and recall how finicky a muse it was*
 
-Relish in wonder at the temple of Object Oriented Programming syntax from last decade and recall how finicky a muse it was
+### hello.py
+*Marvel in the simplicity and elegance of the language spoken by Python*
 
-2) hello.py
-
-Marvel in the simplicity and elegance of the language spoken by Python
-
-3) jeeves.py 
+### jeeves.py 
+Get an overview of how Python is run, how variables are defined & used, and how to set up conditional statements in your code by building a robot butler to suggest an outfit based on the weather information you provide it.
 
 - Variables
 - Conditionals
 
-4) binary.py
+### binary.py
+Learn the Python equilivant of the array: a list. Use loops to iterate over the list and perform computations using stored values by constructing a program to convert a Binary string to a decimal value
 
 - Loops
 - Lists
 
-5) conatcts.py
-
+##) conatcts.py
 - Functions
 - Dictionaries
+- Objects
+- Modules
+
+### scrapy.py
+- 3rd Party Modules
+- Requirements Files
+- Reusable Code
