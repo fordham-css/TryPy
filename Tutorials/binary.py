@@ -81,7 +81,7 @@ print '-' * 75 # Prints out '' 75 times
 # Multi-line formats
 # Take advantge of the flexibility offered by whitespace to format line cleanly
 print('The binary string: {0}\
-       \nThe decimal value: {1} '
+       \nThe decimal value: {1}'
        .format(binaryString, decimal)
        )
 
