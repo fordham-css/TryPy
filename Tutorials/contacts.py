@@ -68,7 +68,7 @@ def close_DB(db):
 # CREATE
 # Creates and saves new Contact object to DB
 def store_contact(db):
-    print('You are going to add a contact to your book')
+    print('You are going to add a contact to your book...')
 
     # Get new contact information
     name = raw_input('Please enter the persons name: ')
@@ -112,7 +112,42 @@ def print_DB(db):
 # UPDATE
 # Edits a contact accessed through key [phone number]
 def edit_contact(db):
-    pass
+    print('Going to update a record in the database...')
+
+    # Print out key/value pairs
+    # iteritems() will return a list of tuples that contain the key in the first position
+    # and value in the second
+    for key, value in db.iteritems():
+        print('Contact name: {}'.format(value.name))
+        print('Contact phone number: {}'.format(key))
+        print '-' * 75
+
+    idx = raw_input('Please enter the phone number of the contact to edit: ')
+
+    try:
+        contact = db.get(idx)
+        print('Going to update {}...'.format(contact.name))
+
+        # Phone number is not reassigned due to its use as primary key
+        # -> Is there a way around this?
+        contact.name = raw_input('Please enter new name of contact: ')
+        contact.address = raw_input('Please enter the new address: ')
+        contact.email = raw_input('Please enter the new email: ')
+        contact.nickname = raw_input('Please enter the new nickname (or leave blank for none): ')
+
+        if contact.nickname == '':
+            contact.nickname = None
+
+        db[idx] = contact
+
+        return True
+
+    # ERROR CASE[3]: Contact with matching key not found in DB
+    except KeyError:
+        print('No contact found with phone number: {}'.format(idx))
+        print('Exiting update function...')
+
+        return False
 
 
 #delet_contact
@@ -129,7 +164,10 @@ def main():
 
     # Driver to go here
 
-    close_DB(db)
+    isClosed = close_DB(db)
+
+    if isClosed:
+        print('Closed {} OK'.format(DB_NAME))
 
 # Entry Point of Script
 if __name__ == '__main__':
