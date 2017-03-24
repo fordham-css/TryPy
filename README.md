@@ -13,4 +13,4 @@ In order to take advantage of this codebase, it stands to reason you need to hav
 To test whether or not you have Python installed, you can enter the command `python --version` to print the version of Python pointed to by your interpreter. If you want to take advantage of the sandbox Python offers through its shell, simply enter `python` in the terminal to open a Python shell. In here you can enter in single Python command, or string together conditionals, loops, functions, and classes. 
 
 ## Running a Python Program
-To run a Python script in its simplest form, enter the command `python /path/to/script`. For example, if there is a script named hello.py in our current directory, entering `python hello.py` will run the hello.py script/
+To run a Python script in its simplest form, enter the command `python /path/to/script`. For example, if there is a script named hello.py in our current directory, entering `python hello.py` will run the hello.py script.
