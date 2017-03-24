@@ -3,7 +3,8 @@ scrapy.py
 ----------
 Program to retrieve quotes from a given author from the
 website Brainyquote.com
-    - Functions
+    - Web Scraping
+    - Requests
 ----------
 '''
 import requests  # For sending requests
