@@ -44,7 +44,7 @@ print('Found the following quotes for {}: \n'.format(author))
 
 for quote in quotes:
     # Quotes are in tags with <title> == 'view quote'
-    # select() methods will return value of <title> tag
+    # get() method will return value of <title> tag
     if quote.get('title') == 'view quote':
         print(quote.getText())  # Method to print inner text of tag
         print('-')*75
