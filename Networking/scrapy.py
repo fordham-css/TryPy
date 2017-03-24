@@ -27,8 +27,8 @@ response.raise_for_status()
 
 # Create a BeautifulSoup Object
 # Allows us to parse the HTML retrieved from brainyquote.com
-# You can specify the parser to use, other option include an
-# XML parser
+# You can specify the parser to use, by default BeautifulSoup 
+# uses the HTML parser (XML parsing also available)
 results = bs4.BeautifulSoup(response.text, 'html.parser')
 
 # Select the quotes
