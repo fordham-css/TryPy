@@ -8,7 +8,7 @@ to write reusable Python code. Additionally, visitors are encouraged to contribu
 to encourage other site users with the hope of sharing the various technology available for use with Python.
 
 ## Topics
-- [Networking](https://github.com/fordham-css/TryPy/tree/master/Networking)
+### - [Networking](https://github.com/fordham-css/TryPy/tree/master/Networking)
 
 ## Installation
 In order to take advantage of this codebase, it stands to reason you need to have Python installed on your computer. You can find the link to download [Python here](https://www.python.org/downloads/). For the purposes of the tutorial, we'll be working with Python 2.7.x; consult the specific demo package for the Python version to use.
