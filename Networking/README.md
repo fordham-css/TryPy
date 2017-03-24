@@ -6,7 +6,7 @@ networking in Python. There are a few different tools devs can use to work with 
 
 ## Contents
 
-### scrapy.py
+### [scrapy.py](https://github.com/fordham-css/TryPy/blob/master/Networking/scrapy.py)
 Learn the basics of webscraping in Python using the BeautifulSoup library and how to use the requests library to retrieve a web page from a server.
 - Web Scraping
 - Requests
