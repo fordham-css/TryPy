@@ -13,7 +13,7 @@ At the tail of each tutorial, there are a number of extensions that could be imp
 *Relish in wonder at the temple of Object Oriented Programming syntax from last decade and recall how finicky a muse it was*
 
 ### [hello.py](https://github.com/fordham-css/TryPy/blob/master/Tutorials/hello.cpp)
-*Marvel in the simplicity and elegance of the language spoken by Python*
+*Marvel at the simplicity and elegance of the language spoken by Python*
 
 ### [jeeves.py](https://github.com/fordham-css/TryPy/blob/master/Tutorials/jeeves.py) 
 Get an overview of how Python is run, how variables are defined & used, and how to set up conditional statements in your code by building a robot butler to suggest an outfit based on the weather information you provide it.
