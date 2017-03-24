@@ -15,7 +15,7 @@ author = raw_input('Author to search for: ')
 
 # Send a request to brainyquote.com with the author formatted in the URL
 # get() method will return a Response object
-# You can do a lot of things with a reponse  like get the JSON of the page,
+# You can do a lot of things with a reponse like get the JSON of the page,
 # get the HTML of a page, etc...
 response = requests.get('http://brainyquote.com/search_results.html?q={}'
                         .format(author))
