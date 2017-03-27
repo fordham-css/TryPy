@@ -10,7 +10,7 @@ At the tail of each tutorial, there are a number of extensions that could be imp
 ## Contents
 
 ### [hello.cpp](https://github.com/fordham-css/TryPy/blob/master/Tutorials/hello.cpp)
-*Relish in wonder at the temple of Object Oriented Programming syntax from last decade and recall how finicky a muse it was*
+*Stare in wonder at the temple of Object Oriented Programming syntax from last decade and recall how finicky a muse it was*
 
 ### [hello.py](https://github.com/fordham-css/TryPy/blob/master/Tutorials/hello.cpp)
 *Marvel at the simplicity and elegance of the language spoken by Python*
@@ -35,9 +35,3 @@ Synthesize your understanding of programming syntax in Python by writing a progr
 - Objects
 - Modules
 - CRUD principles
-
-### scrapy.py
-
-- 3rd Party Modules
-- Requirements Files
-- Reusable Code
