@@ -8,6 +8,7 @@ to write reusable Python code. Additionally, visitors are encouraged to contribu
 to encourage other site users with the hope of sharing the various technology available for use with Python.
 
 ## Topics
+### - [Tutorial](https://github.com/fordham-css/TryPy/tree/master/Tutorials)
 ### - [Networking](https://github.com/fordham-css/TryPy/tree/master/Networking)
 
 ## Installation
