@@ -15,7 +15,8 @@ author = raw_input('Author to search for: ')
 
 # Send a request to brainyquote.com with the author formatted in the URL
 # get() method will return a Response object
-# You can do a lot of things with a reponse like get the JSON of the page,
+# You need to pass get() the URL of the site you are trying to get the HTML of
+# You can do a lot of things with a Reponse object like get the JSON of the page,
 # get the HTML of a page, etc...
 response = requests.get('http://brainyquote.com/search_results.html?q={}'
                         .format(author))
@@ -34,6 +35,10 @@ results = bs4.BeautifulSoup(response.text, 'html.parser')
 # Select the quotes
 # Returns a list of Tag objects that are located in a div named "quotesList"
 # and are links (<a> tags)
+# Since we are looking for the quotes from a given author's result page,
+# they are found as a link inside of an element on the page with an id
+# of quotesList. The select() method will return a list of all the HTML
+# tags that fit both criteria
 # Tag objects are like dictionaries in the way you can retireve values
 # from the tag's elements, as shown below
 # There are a number of ways to specify what elements of a document to
