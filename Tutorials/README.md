@@ -12,7 +12,7 @@ At the tail of each tutorial, there are a number of extensions that could be imp
 ### [hello.cpp](https://github.com/fordham-css/TryPy/blob/master/Tutorials/hello.cpp)
 *Stare in wonder at the temple of Object Oriented Programming syntax from last decade and recall how finicky a muse it was*
 
-### [hello.py](https://github.com/fordham-css/TryPy/blob/master/Tutorials/hello.cpp)
+### [hello.py](https://github.com/fordham-css/TryPy/blob/master/Tutorials/hello.py)
 *Marvel at the simplicity and elegance of the language spoken by Python*
 
 ### [jeeves.py](https://github.com/fordham-css/TryPy/blob/master/Tutorials/jeeves.py) 
