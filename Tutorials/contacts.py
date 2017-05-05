@@ -58,7 +58,7 @@ def close_DB(db):
 
     # ERROR CASE[1]: Unable to close Database
     except Exception:
-        print('ERROR[2]: Unable to open Database')
+        print('ERROR[2]: Unable to close Database')
         print('Exception information: {0}'.format(e))
 
         exit(2) # !! IF WE GOT HERE WE MESSED UP !! *#
