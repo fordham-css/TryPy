@@ -6,6 +6,7 @@
 
 # Program Storage
 *.db
+*.sqlite3
 *.txt
 !requirements.txt
 *.csv
