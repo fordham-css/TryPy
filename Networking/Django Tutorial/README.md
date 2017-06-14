@@ -1,26 +1,43 @@
 # Django TryPy Tutorial
 
-## Directory Structure
+### Directory Structure
 Networking/
+
 |
+
 |
+
   Django Tutorial/ <- You are here
+
   |
+
   |
+
     README.md
+
     TryPyDjango/ <- site root directory
+
     |
+
     |
+
       manage.py
+
       db.sqlite3
+
       TryPyDjango/
+
       |
+
       |
+
         settings.py
+
         urls.py
+
         wsgi.py
 
-## Getting Setup
+### Getting Setup
 
 1. Ensure you have Django installed. If you installed the dependencies from the Networking requirements file you should already have it installed. If not, you should go do that! Read the README in the Networking directory to get that taken care of.
 
