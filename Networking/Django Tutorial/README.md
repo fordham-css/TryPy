@@ -1,41 +1,19 @@
 # Django TryPy Tutorial
 
 ### Directory Structure
+```
 Networking/
-
-|
-
-|
-
-  Django Tutorial/ <- You are here
-
-  |
-
-  |
-
-    README.md
-
-    TryPyDjango/ <- site root directory
-
-    |
-
-    |
-
-      manage.py
-
-      db.sqlite3
-
-      TryPyDjango/
-
-      |
-
-      |
-
-        settings.py
-
-        urls.py
-
-        wsgi.py
+    Django Tutorial/ <- You are here
+        README.md
+        
+        TryPyDjango/ <- site root directory
+            manage.py
+            db.sqlite3
+            
+            TryPyDjango/ <- site specific settings
+                settings.py
+                urls.py
+                wsgi.py
 
 ### Getting Setup
 
