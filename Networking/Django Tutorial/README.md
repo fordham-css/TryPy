@@ -5,15 +5,14 @@
 Networking/
     Django Tutorial/ <- You are here
         README.md
-        
         TryPyDjango/ <- site root directory
             manage.py
-            db.sqlite3
-            
+            db.sqlite3            
             TryPyDjango/ <- site specific settings
                 settings.py
                 urls.py
                 wsgi.py
+```
 
 ### Getting Setup
 
