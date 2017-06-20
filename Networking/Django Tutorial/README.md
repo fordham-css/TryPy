@@ -7,6 +7,15 @@ Networking/
         README.md
         TryPyDjango/ <- site root directory
             manage.py
+            polls/ <- application we'll be working on
+                migrations/
+                __init__.py
+                admin.py
+                apps.py
+                models.py
+                tests.py
+                urls.py
+                views.py
             TryPyDjango/ <- site specific settings
                 settings.py
                 urls.py
