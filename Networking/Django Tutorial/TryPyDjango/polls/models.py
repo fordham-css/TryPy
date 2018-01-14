@@ -8,11 +8,14 @@ Model Definitions
 - Django uses Python classes to define the shema for a project's database.
 Each class represents one table in an SQL organization, with the attributes of
 the class representing the columns for a record in the database.
+
 Attributes are represented as various instances of ModelFields, defined in
 Django's models module.
+
 If an attribute is not explicitly defined as the primary key for a table,
 Django will add one behind the scenes. This attribute can be reffered to by
 either some_model.id or some_model.pk.
+
 Since Django models are just Python classes, they can have defined methods that
 operate on instances of the Model class.
 You can import the model to perform queries in other modules in your
