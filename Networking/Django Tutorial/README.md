@@ -74,9 +74,9 @@ Once the migration has been created, the final step is to run the migration. Run
 #### Using the Django shell
 Django offers an Object-Relation Mapper, or ORM, to provide an API for accessing the database for a project. You can import the model classes to query the database for records, alter attributes of an instance to update data, and save the instance to write changes back to the database. Besides interacting with the model classes in other Django modules, you can use the built-in shell to access the ORM. See an example below of using the shell with the models defined in `polls/models.py`:
 
-```
+```python
 46 // TryPyDjango //$ ./manage.py shell
-Python 2.7.6 (default, Nov 23 2017, 15:49:48) 
+Python 2.7.6 (default, Nov 23 2017, 15:49:48)
 Type "copyright", "credits" or "license" for more information.
 
 # Import the models from the application
