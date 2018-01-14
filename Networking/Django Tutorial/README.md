@@ -1,6 +1,6 @@
 # Django TryPy Tutorial
 
-### Directory Structure
+## Directory Structure
 ```
 Networking/
     Django Tutorial/ <- You are here
@@ -22,7 +22,7 @@ Networking/
                 wsgi.py
 ```
 
-### Getting Started
+## Getting Started
 
 1. Ensure you have Django installed. If you installed the dependencies from the Networking requirements file you should already have it installed. If not, you should go do that! Read the README in the Networking directory to get that taken care of.
 
@@ -31,7 +31,7 @@ Networking/
 3. Finally, run `python manage.py runserver` and navigate to your localhost on any webbrowser (127.0.0.1:8000/polls/). You should see the homepage of the application we'll be using as our demo!
 
 
-### Tutorial
+## Tutorial
 This guide will follow the tutorial in the Django docs. The tutorial can be found [here](https://docs.djangoproject.com/en/1.9/intro/). For those entirely new to working with a web framework, it would be helpful to read over the Django at a glance guide. The final code is included in the project along with some helper comments. A brief outline of each topic can be found below.
 
 **1. Creating the Project & Application**
