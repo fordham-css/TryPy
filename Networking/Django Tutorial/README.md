@@ -67,7 +67,20 @@ ENGINE is the dotted path of the database engine to use in the project, and NAME
 Django knows about an applications database schema by reading the application's `models.py` file. This file contains Python classes that map to database tables, with the class attributes corresponding to column names in the database table. See the `polls/models.py` file for notes on writing Django models.
 
 #### Creating & Running migrations
-After writing the Python class representing the database table, you will need to run the SQL that generates the tables. Fortunately, Django has utilities to handle this for you. The process to create the database tables takes two steps, creating migrations and then running the migrations.
+After writing the Python class representing the database table, you will need to run the SQL that generates the tables. Fortunately, Django has utilities to handle this for you. The process to create the database tables takes two steps, creating migrations and then running the migrations. In order for your application to be available to the Django function, you need to register your app. To do so, add it to the INSTALLED_APPS list in the `settings.py` file.
+
+```python
+# Application definition
+INSTALLED_APPS = [
+    'django.contrib.admin',
+    'django.contrib.auth',
+    'django.contrib.contenttypes',
+    'django.contrib.sessions',
+    'django.contrib.messages',
+    'django.contrib.staticfiles',
+    'polls',
+]
+```
 
 Migrations are Python files that contain commands that perform create, update, and delete operations on database tables. When you create a new model or make changes to an existing model, run the command `python manage.py makemigrations <app_name>`. This will create a Python file in the `<app_name>/migrations/` directory containing the generated Python code to perform your database operations. It is strongly advised that you rename the generated migration file, as the default name given by Django does not really describe what the migration accomplishes.
 
