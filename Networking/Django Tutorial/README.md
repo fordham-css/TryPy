@@ -34,7 +34,7 @@ Networking/
 ### Tutorial
 This guide will follow the tutorial in the Django docs. The tutorial can be found [here](https://docs.djangoproject.com/en/1.9/intro/). For those entirely new to working with a web framework, it would be helpful to read over the Django at a glance guide. The final code is included in the project along with some helper comments. A brief outline of each topic can be found below.
 
-1. Creating the Project & Application
+**1. Creating the Project & Application**
 
 #### Creating the project
 The first thing you'll do when creating you own Django project is to have the django-admin command build your project directory for you. The command to start a new Django project is `django-admin startproject <project_name>`. In this example, the project has already been created. In our example the project is named TryPyDjango.
@@ -45,7 +45,7 @@ Inside of this directory, there will be one file and one directory: a `manage.py
 #### Creating the application
 To build functional components in your Django project, you'll create applications in your project directory. The command to start an application is `python manage.py startapp <app_name>`. Again, the example app has already been created in the project directory, named `polls/`. The command will create a directory in your project directory with the name you gave it, and create some files in it. We'll touch on what each file does in the relevant tutorial for it.
 
-2. Creating the Database
+**2. Creating the Database**
 
 #### Configuring database settings
 By default, Django uses SQLite3 as the database driver. This is suitable for testing and local development, but on production servers a more powerful database engine, like PostgreSQL or MySQL would be better suited for the task. You can find the database configuration in the settings.py file in the project config directory
@@ -73,12 +73,12 @@ Once the migration has been created, the final step is to run the migration. Run
 
 #### Using the Django shell
 
-3. Writing Views
+**3. Writing Views**
 
-4. Forms & Generic Views
+**4. Forms & Generic Views**
 
-5. Writing Unit Tests
+**5. Writing Unit Tests**
 
-6. Static File Serving
+**6. Static File Serving**
 
-7. Working with the Admin Site
+**7. Working with the Admin Site**
