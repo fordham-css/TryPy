@@ -3,7 +3,7 @@
 ## Directory Structure
 ```
 Networking/
-    Django Tutorial/ <- You are here
+    Django/ <- You are here
         README.md
         TryPyDjango/ <- site root directory
             manage.py
@@ -52,7 +52,7 @@ To build functional components in your Django project, you'll create application
 #### Configuring database settings
 By default, Django uses SQLite3 as the database driver. This is suitable for testing and local development, but on production servers a more powerful database engine, like PostgreSQL or MySQL would be better suited for the task. You can find the database configuration in the settings.py file in the project config directory
 ```
-# TryPy/Networking/Django Tutorial/TryPyDjango/TryPyDjango/settings.py
+# TryPy/Networking/Django/TryPyDjango/TryPyDjango/settings.py
 
 DATABASES = {
     'default': {
