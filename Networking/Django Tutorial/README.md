@@ -256,6 +256,8 @@ In [36]: Choice.objects.count()
 Out[36]: 0
 ```
 
+The topic in the Django tutorial covers the admin site shipped with Django. This is an application pre-built in Django projects that allows you to create, update, and delete database records through a UI. You can find more information about the admin site in the docs page. 
+
 **3. Writing Views**
 ------
 
