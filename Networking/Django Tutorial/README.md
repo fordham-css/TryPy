@@ -44,6 +44,14 @@ To build functional components in your Django project, you'll create application
 
 2. Creating the Database
 
+# Configuring database settings
+
+# Writing models.py
+
+# Creating & Running migrations
+
+# Using the Django shell
+
 3. Writing Views
 
 4. Forms & Generic Views
