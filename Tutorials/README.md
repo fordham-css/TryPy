@@ -1,5 +1,4 @@
 # Tutorials
-Python Demo Workshop March 22, 2017
 
 ## Outline
 Set of Python files meant to demonstrate basic programming syntax and nifty Python provided data structures and methods. Note that the order these are presented in are aimed to explain Python from the bottom up, so your order may vary. Consult the list of topics and determine what you can handle and what you should practice

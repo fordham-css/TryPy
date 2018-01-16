@@ -5,7 +5,6 @@ Computes the decimal value of a binary string
 - Lists
 - Loops
 ----------
-Python Demo Workshop, March 22nd 2017
 '''
 
 ### Declare variables to be used

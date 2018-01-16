@@ -5,7 +5,6 @@ Robot to suggest outfit based on the weather
     - Variables
     - Conditionals
 ----------
-Python Demo Workshop, March 22nd 2017
 '''
 #### Declaring variables in Python
 # Good news: No need to lock variable to a type!
