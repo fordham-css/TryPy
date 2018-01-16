@@ -18,26 +18,26 @@ At the tail of each tutorial, there are a number of extensions that could be imp
 ### [jeeves.py](https://github.com/fordham-css/TryPy/blob/master/Tutorials/jeeves.py) 
 Get an overview of how Python is run, how variables are defined & used, and how to set up conditional statements in your code by building a robot butler to suggest an outfit based on the weather information you provide it.
 
-- Variables
-- Conditionals
 [Topic Guide](https://github.com/fordham-css/TryPy/wiki/Programming-Concepts-1:-Variables-&-Conditionals)
 
+- Variables
+- Conditionals
 
 ### [binary.py](https://github.com/fordham-css/TryPy/blob/master/Tutorials/binary.py)
 Learn the Python equilivant of the array: a list. Use loops to iterate over the list and perform computations using stored values by constructing a program to convert a Binary string to a decimal value
 
-- Loops
-- Lists
 [Topic Guide](https://github.com/fordham-css/TryPy/wiki/Programming-Concepts-2:-List-&-Loops)
 
+- Loops
+- Lists
 
 ### [conatcts.py](https://github.com/fordham-css/TryPy/blob/master/Tutorials/contacts.py)
 Synthesize your understanding of programming syntax in Python by writing a program that allows a user to interact with a database to store, read, and update contacts
+
+NOTE: This program covers two topics: [Functions](https://github.com/fordham-css/TryPy/wiki/Programming-Concepts-3:-Functions) and [Objects & Modules](https://github.com/fordham-css/TryPy/wiki/Programming-Concepts-4:-Objects-&-Modules)
 
 - Functions
 - Dictionaries
 - Objects
 - Modules
 - CRUD principles
-
-NOTE: This program covers two topics: [Functions](https://github.com/fordham-css/TryPy/wiki/Programming-Concepts-3:-Functions) and [Objects & Modules](https://github.com/fordham-css/TryPy/wiki/Programming-Concepts-4:-Objects-&-Modules)
