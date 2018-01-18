@@ -262,10 +262,18 @@ The topic in the Django tutorial covers the admin site shipped with Django. This
 ------
 
 #### What is a view?
+A callable that receives a request and returns a response. Based on what url is requested from the server Django will call the appropriate function (in the case of class based views the `as_view` method) and pass the request as an argument, along with any arguments captured in the url.
 
 #### URL dispatchers
+`urls.py` defines a set of regular expression used to find patterns in urls and view callables to route the requested url to the proper method. Django will read patterns from top to bottom, and will dispatch the request to the first matching pattern. If no matching pattern is found, a 404 error will be raised.
 
 #### Rendering templates
+Django allows you to use templates to render a context dictionary of data in the template.
+This allows you to pass arbitrary values to the template and have them rendered in the users browser. For example, you can write a template that iterates over a `QuerySet` and print out certain attributes, like name and id. In the view you can perform a `filter` or `exclude` on a Model class representing a table in your database and pass the result to the template when the page is rendered. In this way you can pass records from your database to a page on your website.
+
+Note that you are not limited to just passing values for your database to the template. You can pass any objects to the template* and have them rendered in the page.
+
+*citation needed
 
 **4. Forms & Generic Views**
 ------
