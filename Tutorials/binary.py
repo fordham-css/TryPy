@@ -1,12 +1,12 @@
-'''
+"""
 binary.py
 ----------
 Computes the decimal value of a binary string
 - Lists
 - Loops
 ----------
-Python Demo Workshop, March 22nd 2017
-'''
+python3 binary.py
+"""
 
 ### Declare variables to be used
 
@@ -75,15 +75,16 @@ for i in range(len(binary)):
 # We want to convert binary list into a nice string to print out
 binaryString = ''.join(str(bit) for bit in binary) # NOW WE'RE DOING REAL PYTHON!!! [For Each Loop]
 
-# String Concatenation
-print('-' * 75) # Prints out '' 75 times
+# String Concatenation Using Multiplication
+print('-' * 75) # Prints out a string containing 75 '-' characters
 
 # Multi-line formats
 # Take advantge of the flexibility offered by whitespace to format line cleanly
-print('The binary string: {0}\
-       \nThe decimal value: {1}'
-       .format(binaryString, decimal)
-       )
+print('''
+The binary string: {0}
+The decimal value: {1}
+'''.format(binaryString, decimal)
+)
 
 '''
 -- BONUS --
