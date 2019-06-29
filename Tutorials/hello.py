@@ -1,8 +1,8 @@
-'''
+"""
 hello.py
 ----------
 Hello World in Python
 ----------
-Python Demo Workshop, March 22nd 2017
-'''
+python3 hello.py
+"""
 print('Hello World!') # No, seriosuly
