@@ -27,6 +27,12 @@ class Contact():
         self.nickname = nickname
 
 
+# print_line
+# Prints a divider of '-' characters
+def print_line():
+    print('-' * 75)
+
+
 # open_DB
 # Returns open instance of shelve object
 def open_DB():
@@ -71,11 +77,11 @@ def store_contact(db):
     print('You are going to add a contact to your book...')
 
     # Get new contact information
-    name = raw_input('Please enter the persons name: ')
-    phone = raw_input('Please enter the telephone number: ')
-    address = raw_input('Please enter the address: ')
-    email = raw_input('Please enter the email: ')
-    nick = raw_input('Please enter the nickname (or leave blank for none): ')
+    name = input('Please enter the persons name: ')
+    phone = input('Please enter the telephone number: ')
+    address = input('Please enter the address: ')
+    email = input('Please enter the email: ')
+    nick = input('Please enter the nickname (or leave blank for none): ')
 
     # Account for no nickname
     if nick == '':
@@ -98,7 +104,7 @@ def print_DB(db):
 
     # Loop through dictionary to print values
     for value in db.values():
-        print '-' * 75
+        print_line()
         print('Name: {}'.format(value.name))
         print('Phone: {}'.format(value.phone))
         print('Address: {}'.format(value.address))
@@ -107,7 +113,7 @@ def print_DB(db):
         if value.nickname:
             print('Nickname: {}'.format(value.nickname))
 
-        print '-' * 75
+        print_line()
 
 
 # edit_contact
@@ -119,13 +125,13 @@ def edit_contact(db):
     # Print out key/value pairs
     # iteritems() will return a list of tuples that contain the key in the first position
     # and value in the second
-    for key, value in db.iteritems():
-        print '-' * 75
+    for key, value in db.items():
+        print_line()
         print('Contact name: {}'.format(value.name))
         print('Contact phone number: {}'.format(key))
-        print '-' * 75
+        print()
 
-    idx = raw_input('Please enter the phone number of the contact to edit: ')
+    idx = input('Please enter the phone number of the contact to edit: ')
 
     try:
         contact = db[idx]
@@ -133,10 +139,10 @@ def edit_contact(db):
 
         # Phone number is not reassigned due to its use as primary key
         # -> Is there a way around this?
-        contact.name = raw_input('Please enter new name of contact: ')
-        contact.address = raw_input('Please enter the new address: ')
-        contact.email = raw_input('Please enter the new email: ')
-        contact.nickname = raw_input('Please enter the new nickname (or leave blank for none): ')
+        contact.name = input('Please enter new name of contact: ')
+        contact.address = input('Please enter the new address: ')
+        contact.email = input('Please enter the new email: ')
+        contact.nickname = input('Please enter the new nickname (or leave blank for none): ')
 
         if contact.nickname == '':
             contact.nickname = None
@@ -160,19 +166,19 @@ def delete_contact(db):
     print('Going to delete a record in the database...')
 
     # Print out key/value pairs
-    for key, value in db.iteritems():
-        print '-' * 75
+    for key, value in db.items():
+        print_line()
         print('Contact name: {}'.format(value.name))
         print('Contact phone number: {}'.format(key))
-        print '-' * 75
+        print_line()
 
-    idx = raw_input('Please enter the phone number of the contact to delete: ')
+    idx = input('Please enter the phone number of the contact to delete: ')
 
     try:
         contact = db[idx]
 
         # Confirm user wants to delete contact
-        confirm = raw_input('Are you SURE you want to delete {} from your contacts? (y/n):'.format(contact.name))
+        confirm = input('Are you SURE you want to delete {} from your contacts? (y/n):'.format(contact.name))
 
         if confirm.lower() == 'y':
             del db[idx] # Deletes key/value pair in DB on key
@@ -197,9 +203,9 @@ def main():
 
     # Main Loop to control flow of program
     while True:
-        print '*' * 75
+        print_line()
         print('Main Menu')
-        print '*' * 75
+        print_line()
         print('Please select a command: ')
         print('1. Add a contact')
         print('2. Print the database')
@@ -208,7 +214,7 @@ def main():
         print('5. Exit program')
 
         # Get user choice to run desired function
-        choice = raw_input('> ')
+        choice = input('> ')
 
         try:
             choice = int(choice)
@@ -270,14 +276,14 @@ HINT: Since the size of this program isn't astronomically large, you can get awa
 looping over the dictionary. How to go through the objects in the database to select the
 one(s) with matching attributes?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-2) Implement dunder methods for Contact class. For example, the __str__ method is implicitly 
+2) Implement dunder methods for Contact class. For example, the __str__ method is implicitly
 called when you try <print contact>. Dundner methods are special to Python and have very
 specific, pre defined uses: http://minhhh.github.io/posts/a-guide-to-pythons-magic-methods
 
-HINT: The __init__ method is a dunder method. What are its arguments? What is the purpose of 
+HINT: The __init__ method is a dunder method. What are its arguments? What is the purpose of
 passing 'self' as the first argument to the class method?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-3) Entering in contacts manually can be a chore. Offer a way for a user to pass a CSV or text 
+3) Entering in contacts manually can be a chore. Offer a way for a user to pass a CSV or text
 file as an argument to the program and read in contacts from the file
 
 HINT: There are many ways to attack this problem. Decide what the most effective method will
