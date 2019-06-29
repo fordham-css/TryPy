@@ -23,7 +23,7 @@ flag = True
 ### While Loop
 # Will continue to execute code as long as condition is True (1)
 while flag:
-    bit = raw_input('Please enter a 1 or 0 (enter break to finish string: ')
+    bit = input('Please enter a 1 or 0 (enter break to finish string): ')
 
     # BREAK CASE
     # Want to catch before typecasting bit to int, as we care about this string value
@@ -54,9 +54,9 @@ while flag:
 #       -> len() built in method used to find length of list
 #           ex.
 #           > a = [1, 2, 3, 4]
-#           > len(a) # 4  
+#           > len(a) # 4
 for i in range(len(binary)):
-    # Get current bit 
+    # Get current bit
     bit = binary[i]
 
     # If bit is 0, ignore
@@ -75,8 +75,8 @@ for i in range(len(binary)):
 # We want to convert binary list into a nice string to print out
 binaryString = ''.join(str(bit) for bit in binary) # NOW WE'RE DOING REAL PYTHON!!! [For Each Loop]
 
-# String Concatenation 
-print '-' * 75 # Prints out '' 75 times
+# String Concatenation
+print('-' * 75) # Prints out '' 75 times
 
 # Multi-line formats
 # Take advantge of the flexibility offered by whitespace to format line cleanly
@@ -96,7 +96,7 @@ HINT: Will need to import the collections module in your program. How can you ge
 a Deque Class?
 ~~~~~~~~~~~~~~~~~
 2) The for loop we currently use to calculate the decimal value works, but can be made more
-clean through the use of a For Each Loop. But we also need to keep a tab on the index, which a basic 
+clean through the use of a For Each Loop. But we also need to keep a tab on the index, which a basic
 <for thing in List> does not grant. How can you keep track of index in a For Each Loop?
 
 HINT: If you want to grab more than one value from the list (say a bit and its index), you're gonna
