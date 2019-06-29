@@ -1,12 +1,13 @@
-'''
+"""
 jeeves.py
 ----------
 Robot to suggest outfit based on the weather
     - Variables
     - Conditionals
 ----------
-Python Demo Workshop, March 22nd 2017
-'''
+python3 jeeves.py
+"""
+
 #### Declaring variables in Python
 # Good news: No need to lock variable to a type!
 # Bad news: No real implementation of constant variable types...
@@ -17,7 +18,8 @@ HIGH_THRESHOLD = 80
 JACKET_THRESHOLD = 40
 SHORTS_THRESHOLD = 65
 
-print('It is your robots first day on the job, so please introduce yourself: ')
+print('It is your robots first day on the job, so please introduce yourself.')
+print('Enter your name in the prompt and press [ENTER] when done')
 
 # Declare and initialize a variable from user input
 # String Data Type
@@ -26,12 +28,18 @@ name = input('> ')
 print('Great! He will be with you now..')
 
 # Format print statement with name as paramater
-print('Good day {0}'.format(name)) # Will place name in first position (zero indexed)
+# Will format the string to have the value of the variable `name`
+# ex. If name = 'John'; then would output 'Good day John'
+print('Good day {}'.format(name))
+
+
 print('My name is Jeeves, your personal robot butler. Shall we settle on an outfit for today?')
 
 # Get current weather temperature and condition
 temp = input('Now what is the temperature outside today?\n > ')
-temp = int(temp) # IMPORTANT: raw_input returns a string, need to type cast to an int
+
+# IMPORTANT: input returns a string, need to type cast to an int
+temp = int(temp)
 
 condition = input('Now would you say it is clear, cloudy, or overcast?\n > ')
 
@@ -83,17 +91,12 @@ else: # Executes on good_weather == False
 
 print('Hope you have a great day {0}!!!'.format(name))
 
-'''
+"""
 -- BONUS --
 Obviously, having to enter your name every single time you run this
-program is woefully ineffecient.
-
--> Try having the program save your name the first time you enter it
-(say into a text file) and in subsequent uses just read the name
-from the file
+program is woefully ineffecient. Try having the program save your name
+the first time you enter it to some persistent format (say a text file)
+and in subsequent program runs read the name from the file.
 
 Working with files in Python: http://pymbook.readthedocs.io/en/latest/file.html
-
-HINT: You can use a conditional to see if the name has been
-recorded already. If so, read the name from the file. Else...
-'''
+"""
