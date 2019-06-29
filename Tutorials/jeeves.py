@@ -21,7 +21,7 @@ print('It is your robots first day on the job, so please introduce yourself: ')
 
 # Declare and initialize a variable from user input
 # String Data Type
-name = raw_input('> ')
+name = input('> ')
 
 print('Great! He will be with you now..')
 
@@ -30,10 +30,10 @@ print('Good day {0}'.format(name)) # Will place name in first position (zero ind
 print('My name is Jeeves, your personal robot butler. Shall we settle on an outfit for today?')
 
 # Get current weather temperature and condition
-temp = raw_input('Now what is the temperature outside today?\n > ')
+temp = input('Now what is the temperature outside today?\n > ')
 temp = int(temp) # IMPORTANT: raw_input returns a string, need to type cast to an int
 
-condition = raw_input('Now would you say it is clear, cloudy, or overcast?\n > ')
+condition = input('Now would you say it is clear, cloudy, or overcast?\n > ')
 
 # Error Checking on condition
 condition = condition.lower() # For the purposes of comparison
@@ -73,7 +73,7 @@ if good_weather: # Will execute if good_weather == True
 
 else: # Executes on good_weather == False
     if temp >= SHORTS_THRESHOLD:
-        print('Tough spot...try wearing dri fit shorts with a light rain jacket') 
+        print('Tough spot...try wearing dri fit shorts with a light rain jacket')
 
     elif temp <= JACKET_THRESHOLD:
         print('Gonna be a tough go. Definitely go with a jacket, hat, and boots if need be')
