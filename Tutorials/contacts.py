@@ -1,4 +1,4 @@
-'''
+"""
 conatcts.py
 ----------
 Contact Book Application to CRUD personal contacts via a shelve DB
@@ -6,8 +6,9 @@ Contact Book Application to CRUD personal contacts via a shelve DB
     - Objects
     - Modules
 ----------
-Python Demo Workshop, March 22nd 2017
-'''
+python3 contacts.py
+"""
+
 ### Import Modules
 import shelve # Database Management Module [https://docs.python.org/2/library/shelve.html]
 
@@ -266,7 +267,7 @@ if __name__ == '__main__':
     main()
 
 
-'''
+"""
 -- BONUS --
 1) Add a function to allow a user to enter in a value for a Contact attribute
 (email, name, address, etc.) and query Database to find if there is a Contact with
@@ -277,7 +278,7 @@ looping over the dictionary. How to go through the objects in the database to se
 one(s) with matching attributes?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 2) Implement dunder methods for Contact class. For example, the __str__ method is implicitly
-called when you try <print contact>. Dundner methods are special to Python and have very
+called when you call `print(contact)`. Dunder methods are special to Python and have very
 specific, pre defined uses: http://minhhh.github.io/posts/a-guide-to-pythons-magic-methods
 
 HINT: The __init__ method is a dunder method. What are its arguments? What is the purpose of
@@ -289,4 +290,4 @@ file as an argument to the program and read in contacts from the file
 HINT: There are many ways to attack this problem. Decide what the most effective method will
 be versus how difficult it would be to implement. At any rate, you ideally will have a file of
 many contacts that you separate into unique Contact instances and save to the database
-'''
+"""
